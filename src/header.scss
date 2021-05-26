@@ -1,0 +1,16 @@
+$bgColor: rgb(202, 202, 202);
+
+body {
+  background: $bgColor;
+
+  header {
+    h1 {
+      background-color: rgb(31, 31, 32);
+      color: white;
+      padding: 30px;
+      text-align: center;
+      font-size: 50px;
+      letter-spacing: 3px;
+    }
+  }
+}

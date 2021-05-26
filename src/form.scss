@@ -1,0 +1,41 @@
+body {
+  div {
+   height: 100%;
+   
+    form {
+      width: 700px;
+      text-align: center;
+      margin: 10px auto 100px auto;
+
+      button{
+        width: 100px;
+        height: 40px;
+        margin-left: 30px;
+        border-radius: 12px;
+      }
+
+      input[type="text"]{
+        width: 500px;
+        height: 30px;
+        margin-bottom: 30px;
+      }
+
+      input[type="radio"]{
+       margin-left: 10px;
+      }
+    }
+
+    section{
+      background-color: rgb(224, 224, 224);
+      height: 100%;
+      padding-top: 40px;
+      border: 1px solid black;
+
+      p{
+        font-size: 25px;
+        padding-left: 30px;
+      }
+    }
+   
+  }
+}
