@@ -1,4 +1,7 @@
 import React from 'react';
+import Form from './Form.js'
+import Results from './Results.js'
+
 import './header.scss';
 import './form.scss';
 import './footer.scss';
@@ -19,65 +22,30 @@ const Footer = () => {
   )
 }
 
-class GetForm extends React.Component {
+class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      method: 'chosen method',
-      input: 'nothing to see yet'
+      count: 0,
+      results: []
     }
   }
 
-  handleChange = e => {
-    let input = e.target.value;
-    this.setState({ input })
-  }
-
-  handleClick = e => {
-    e.preventDefault();
-    let method = e.target.value;
-    this.setState({ method })
-  }
-
-  handleSubmit = e => {
-    e.preventDefault()
+  handleForm = (count, results) => {
+    this.setState({ count, results });
   }
 
   render(){
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-        <input type="text" onChange={this.handleChange} />
-        <button type="submit">GO!</button> 
-        <br />
-        <input type="radio" id="get" name="method" value="get" onClick={this.handleClick}/>
-        <label for="get">GET</label>
-        <input type="radio" id="post" name="method" value="post" onClick={this.handleClick}/>
-        <label for="post">POST</label>
-        <input type="radio" id="put" name="method" value="put" onClick={this.handleClick}/>
-        <label for="put">PUT</label>
-        <input type="radio" id="delete" name="method" value="delete" onClick={this.handleClick}/>
-        <label for="delete">DELETE</label>
-      </form>
-      <section>
-        <p>{this.state.method}: {this.state.input}</p>
-      </section>
-      </div>
-      
-    )
-  }
-}
-
-class App extends React.Component {
-  render() {
-    return (
-      <React.Fragment>
+      <>
         <Header />
-        <GetForm />
+        <Form handleForm={this.handleForm} />
+        <Results results={this.state.results} />
         <Footer />
-      </React.Fragment>
+      </>
     )
   }
 }
 
 export default App;
+
