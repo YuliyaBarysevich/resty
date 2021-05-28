@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# RESTy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First React App
 
-## Available Scripts
+## LAB - Component Based UI
 
-In the project directory, you can run:
+**Phase 1 Requirements:**
 
-### `npm start`
+In this first phase, goal is to setup the basic scaffolding of the application, with intent being to add more functionality to the system during the next labs. This initial build sets up the file structure so that we can progressively build this application in a scalable manner.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**User stories:**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- As a user, I expect an easy to read and understand user interface so that I can use the application intuitively
+- As a user, I want to enter the URL to a REST API and select the REST method to use to access it
+- As a user, I want visual confirmation that my entries and selections are valid so that I have confidence the application will be able to fetch the API data that I’ve requested
 
-### `npm test`
+## LAB - Props and State
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Phase 2 Requirements:**
 
-### `npm run build`
+In phase 2, we will be connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service `GET` requests.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**User stories:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- As a user, I want to enter the URL to an API and issue a GET request so that I can retrieve it’s data
+- As a user, I want to see the results returned from an API request in my browser in a readable format
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## LAB - Component Composition
 
-### `npm run eject`
+**Phase 3 Requirements:**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+In this phase of the RESTy build, we will be adding some more fidelity to the application, including a menu, history, and an “in-progress” spinner.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**User stories:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- As a user, I want to be able to use all REST methods so that I can do more than just get data
+- As a user, I want a simple list of all previous queries I’ve run so that I can easily see which queries I’ve run before
+- As a user, I want to click on an old query and have my selections appear in the form for me, so I don’t have to re-type them
+- As a user, I want to see a “loading” indicator while RESTy is fetching data so that I know it’s working on my request
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## LAB - Routing
 
-## Learn More
+**Phase 4 Requirements:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In this final phase of the RESTy build, we will be adding some more fidelity to the application, including a menu with a ore detailed view of our history, as well as an about us page.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**User stories:**
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- As a user, I want to see all of my previous queries as a separate page so that I can browse them in greater detail
+- As a user, I would like to view a separate “Help” page so I can learn how the application works
