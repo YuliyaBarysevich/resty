@@ -37,3 +37,14 @@ In this phase of the RESTy build, we will be adding some more fidelity to the ap
 - As a user, I want a simple list of all previous queries I’ve run so that I can easily see which queries I’ve run before
 - As a user, I want to click on an old query and have my selections appear in the form for me, so I don’t have to re-type them
 - As a user, I want to see a “loading” indicator while RESTy is fetching data so that I know it’s working on my request
+
+## LAB - Routing
+
+**Phase 4 Requirements:**
+
+In this final phase of the RESTy build, we will be adding some more fidelity to the application, including a menu with a ore detailed view of our history, as well as an about us page.
+
+**User stories:**
+
+- As a user, I want to see all of my previous queries as a separate page so that I can browse them in greater detail
+- As a user, I would like to view a separate “Help” page so I can learn how the application works

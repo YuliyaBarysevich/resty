@@ -12,12 +12,12 @@ class Results extends React.Component {
       <section className="results">
         <If condition={this.props.loading}>
           <Then>
-            <img src={load} />
+            <img alt="loading" src={load} />
           </Then>
           <Else>
           <h2>Results</h2>
           <div>
-        <pre>{ JSON.stringify(this.props.results, null, 2) }</pre>
+        <pre>{ JSON.stringify(this.props.results, null, 4) }</pre>
         </div>
           </Else>
         </If>

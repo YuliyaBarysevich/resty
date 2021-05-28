@@ -12,5 +12,15 @@ body {
       font-size: 50px;
       letter-spacing: 3px;
     }
+
+    li {
+      margin-top: 2.3vw;
+      margin-left: 40px;
+      display: inline-block;
+  
+      a {
+        color: black;
+      }
+    }
   }
 }
